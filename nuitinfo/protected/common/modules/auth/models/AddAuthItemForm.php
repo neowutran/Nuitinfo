@@ -27,9 +27,9 @@ class AddAuthItemForm extends CFormModel
     public function attributeLabels()
     {
 
-        return array(
+        return [
             'items' => Yii::t('AuthModule.main', 'Items'),
-        );
+        ];
     }
 
     /**
@@ -40,11 +40,11 @@ class AddAuthItemForm extends CFormModel
     public function rules()
     {
 
-        return array(
-            array(
+        return [
+            [
                 'items',
                 'required'
-            ),
-        );
+            ],
+        ];
     }
 }

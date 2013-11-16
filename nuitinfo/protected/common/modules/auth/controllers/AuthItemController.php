@@ -30,9 +30,9 @@ abstract class AuthItemController extends AuthController
 
         $this->render(
             'index',
-            array(
+            [
                 'dataProvider' => $dataProvider,
-            )
+            ]
         );
     }
 
@@ -58,10 +58,10 @@ abstract class AuthItemController extends AuthController
                 }
 
                 $this->redirect(
-                    array(
+                    [
                         'view',
                         'name' => $item->name
-                    )
+                    ]
                 );
             }
         }
@@ -70,9 +70,9 @@ abstract class AuthItemController extends AuthController
 
         $this->render(
             'create',
-            array(
+            [
                 'model' => $model,
-            )
+            ]
         );
     }
 
@@ -105,7 +105,7 @@ abstract class AuthItemController extends AuthController
                     $am->save();
                 }
 
-                $this->redirect(array('index'));
+                $this->redirect(['index']);
             }
         }
 
@@ -115,10 +115,10 @@ abstract class AuthItemController extends AuthController
 
         $this->render(
             'update',
-            array(
+            [
                 'item'  => $item,
                 'model' => $model,
-            )
+            ]
         );
     }
 
@@ -151,10 +151,10 @@ abstract class AuthItemController extends AuthController
 
         $item = $am->getAuthItem($name);
 
-        $dpConfig = array(
+        $dpConfig = [
             'pagination' => false,
-            'sort'       => array('defaultOrder' => 'depth asc'),
-        );
+            'sort'       => ['defaultOrder' => 'depth asc'],
+        ];
 
         $ancestors  = $am->getAncestors($name);
         $ancestorDp = new PermissionDataProvider(array_values($ancestors), $dpConfig);
@@ -164,18 +164,18 @@ abstract class AuthItemController extends AuthController
 
         $childOptions = $this->getItemChildOptions($item->name);
         if (!empty($childOptions)) {
-            $childOptions = array_merge(array('' => Yii::t('AuthModule.main', 'Select item') . ' ...'), $childOptions);
+            $childOptions = array_merge(['' => Yii::t('AuthModule.main', 'Select item') . ' ...'], $childOptions);
         }
 
         $this->render(
             'view',
-            array(
+            [
                 'item'         => $item,
                 'ancestorDp'   => $ancestorDp,
                 'descendantDp' => $descendantDp,
                 'formModel'    => $formModel,
                 'childOptions' => $childOptions,
-            )
+            ]
         );
     }
 
@@ -201,7 +201,7 @@ abstract class AuthItemController extends AuthController
                 }
 
                 if (!isset($_POST['ajax'])) {
-                    $this->redirect(array('index'));
+                    $this->redirect(['index']);
                 }
             } else {
                 throw new CHttpException(404, Yii::t('AuthModule.main', 'Item does not exist.'));
@@ -231,10 +231,10 @@ abstract class AuthItemController extends AuthController
         }
 
         $this->redirect(
-            array(
+            [
                 'view',
                 'name' => $itemName
-            )
+            ]
         );
     }
 
@@ -258,10 +258,10 @@ abstract class AuthItemController extends AuthController
         }
 
         $this->redirect(
-            array(
+            [
                 'view',
                 'name' => $itemName
-            )
+            ]
         );
     }
 
@@ -275,7 +275,7 @@ abstract class AuthItemController extends AuthController
     protected function getItemChildOptions($itemName)
     {
 
-        $options = array();
+        $options = [];
 
         /* @var $am CAuthManager|AuthBehavior */
         $am = Yii::app()->getAuthManager();
@@ -308,7 +308,7 @@ abstract class AuthItemController extends AuthController
     protected function getValidChildTypes()
     {
 
-        $validTypes = array();
+        $validTypes = [];
 
         switch ($this->type) {
             case CAuthItem::TYPE_OPERATION:

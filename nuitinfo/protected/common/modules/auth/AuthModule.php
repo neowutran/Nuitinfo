@@ -43,7 +43,7 @@ class AuthModule extends CWebModule
     /**
      * @var array map of flash message keys to use for the module.
      */
-    public $flashKeys = array();
+    public $flashKeys = [];
     /**
      * @var string string the id of the default controller for this module.
      */
@@ -68,24 +68,24 @@ class AuthModule extends CWebModule
     {
 
         $this->setImport(
-            array(
+            [
                 'auth.components.*',
                 'auth.controllers.*',
                 'auth.models.*',
                 'auth.widgets.*',
-            )
+            ]
         );
 
         $this->registerCss();
 
         $this->flashKeys = array_merge(
             $this->flashKeys,
-            array(
+            [
                 'error'   => 'error',
                 'info'    => 'info',
                 'success' => 'success',
                 'warning' => 'warning',
-            )
+            ]
         );
 
         if (isset($this->viewDir)) {

@@ -23,7 +23,7 @@ class CachedAccessRecord extends CComponent
      */
     public $userId;
 
-    private $_entries = array();
+    private $_entries = [];
 
     /**
      * Creates the record.
@@ -45,7 +45,7 @@ class CachedAccessRecord extends CComponent
      * @param array   $params name-value pairs that would be passed to biz rules associated
      *                        with the tasks and roles assigned to the user.
      */
-    public function addEntry($allow, $params = array())
+    public function addEntry($allow, $params = [])
     {
 
         $this->_entries[serialize($params)] = $allow;

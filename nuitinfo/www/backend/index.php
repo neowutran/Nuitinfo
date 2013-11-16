@@ -9,12 +9,12 @@
  * @copyright 2013 2amigOS! Consultation Group LLC
  * @license   http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-require(__DIR__ . '/../../../presentation/ini_file.php');
+require(__DIR__ . '/../../../nuitinfo/ini_file.php');
 require(__DIR__ . '/../../protected/common/lib/vendor/autoload.php');
 require(__DIR__ . '/../../protected/common/lib/vendor/yiisoft/yii/framework/yiilite.php');
 
 //Yii::setPathOfAlias('auth', '/var/www/presentation/protected/common/modules/auth');
-Yii::setPathOfAlias('auth', '/var/www/presentation/protected/common/modules/auth');
+Yii::setPathOfAlias('auth', PROJECT_ROOT.'/protected/common/modules/auth');
 Yii::import('auth.*');
 //Yii::import('auth.filters.*');
 //Yii::import('auth.components.*');

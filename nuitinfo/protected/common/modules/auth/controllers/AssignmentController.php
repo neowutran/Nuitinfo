@@ -24,9 +24,9 @@ class AssignmentController extends AuthController
 
         $this->render(
             'index',
-            array(
+            [
                 'dataProvider' => $dataProvider
-            )
+            ]
         );
     }
 
@@ -76,12 +76,12 @@ class AssignmentController extends AuthController
 
         $this->render(
             'view',
-            array(
+            [
                 'model'             => $model,
                 'authItemDp'        => $authItemDp,
                 'formModel'         => $formModel,
                 'assignmentOptions' => $assignmentOptions,
-            )
+            ]
         );
     }
 
@@ -113,10 +113,10 @@ class AssignmentController extends AuthController
 
             if (!isset($_POST['ajax'])) {
                 $this->redirect(
-                    array(
+                    [
                         'view',
                         'id' => $userId
-                    )
+                    ]
                 );
             }
         } else {
@@ -134,7 +134,7 @@ class AssignmentController extends AuthController
     protected function getAssignmentOptions($userId)
     {
 
-        $options = array();
+        $options = [];
 
         /* @var $am CAuthManager|AuthBehavior */
         $am = Yii::app()->authManager;

@@ -18,7 +18,7 @@ class AuthFilter extends CFilter
      * @var array name-value pairs that would be passed to business rules associated
      * with the tasks and roles assigned to the user.
      */
-    public $params = array();
+    public $params = [];
 
     /**
      * Performs the pre-action filtering.

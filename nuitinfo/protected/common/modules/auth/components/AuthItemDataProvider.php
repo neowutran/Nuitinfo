@@ -19,7 +19,7 @@ class AuthItemDataProvider extends CDataProvider
      */
     public $type;
 
-    private $_items = array();
+    private $_items = [];
 
     /**
      * Sets the authorization items.
@@ -56,13 +56,13 @@ class AuthItemDataProvider extends CDataProvider
     protected function fetchKeys()
     {
 
-        return array(
+        return [
             'name',
             'description',
             'type',
             'bizrule',
             'data'
-        );
+        ];
     }
 
     /**

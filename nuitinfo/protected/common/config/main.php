@@ -14,11 +14,14 @@ return [
         'input',
     ],
     'aliases'    => [
-        'frontend' => dirname(__FILE__) . '/../..' . '/frontend',
-        'common'   => dirname(__FILE__) . '/../..' . '/common',
-        'backend'  => dirname(__FILE__) . '/../..' . '/backend',
-        'vendor'   => dirname(__FILE__) . '/../..' . '/common/lib/vendor',
-        'auth'     => dirname(__FILE__) . '/../..' . '/common/modules/auth',
+        'frontend'  => dirname(__FILE__) . '/../..' . '/frontend',
+        'common'    => dirname(__FILE__) . '/../..' . '/common',
+        'backend'   => dirname(__FILE__) . '/../..' . '/backend',
+        'vendor'    => dirname(__FILE__) . '/../..' . '/common/lib/vendor',
+        'auth'      => dirname(__FILE__) . '/../..' . '/common/modules/auth',
+        'bootstrap' => dirname(__FILE__) . '/../..' . '/common/lib/vendor/2amigos/yiistrap',
+        'yiiwheels' => dirname(__FILE__) . '/../..' . '/common/lib/vendor/2amigos/yiiwheels',
+
     ],
     'import'     => [
         'common.extensions.components.*',
@@ -28,6 +31,7 @@ return [
         'common.modules.*',
         'common.extensions.*',
         //'auth.*',
+        'bootstrap.helpers.TbHtml',
         'application.controllers.*',
         'application.extensions.*',
         'application.helpers.*',
@@ -50,27 +54,31 @@ return [
         ],
     ],
     'components' => [
-        'clientScript'    => [
-            'class'             => 'common.extensions.compressor.CompressorClientScript', //use whatever location you put the extension
+        /*
+    'clientScript'    => [
+        'class'             => 'common.extensions.compressor.CompressorClientScript',
+        //use whatever location you put the extension
 //the following options are optional and the values defined in this example are the default ones
-            'compress'          => true, //wheter to minify and compress the files. Defaults to true
+        'compress'          => true,
+        //wheter to minify and compress the files. Defaults to true
 //see YUICompressor class for more details
-            'compressorOptions' => [
+        'compressorOptions' => [
 //Insert a line breaks after '}' characters for css files or
 //Insert a line break after the specified column number for js files
-                'linebreak'  => false,
-                //Display informational messages and warnings. (useful for cleaning up your JS)
-                'verbose'    => false,
-                //Minify only, no symbol obfuscation. Valid for js files
-                'nomunge'    => false,
-                //Preserve unnecessary semicolons (such as right before a '}'). Valid for js files
-                'semi'       => false,
-                //Disable all the built-in micro optimizations. Valid for js files
-                'nooptimize' => false,
-                //path to the java binary
+            'linebreak'  => false,
+            //Display informational messages and warnings. (useful for cleaning up your JS)
+            'verbose'    => false,
+            //Minify only, no symbol obfuscation. Valid for js files
+            'nomunge'    => false,
+            //Preserve unnecessary semicolons (such as right before a '}'). Valid for js files
+            'semi'       => false,
+            //Disable all the built-in micro optimizations. Valid for js files
+            'nooptimize' => false,
+            //path to the java binary
 //you can use, for example, 'C:\Program Files (x86)\Java\jre7\bin\java.exe' if you are windows
-                'javaBin'    => 'java',
-            ], ],
+            'javaBin'    => 'java',
+        ],
+    ],*/
         'db'              => [
             'class'                 => 'CDbConnection',
             'connectionString'      => 'mysql:host=localhost;dbname=nuitinfo',
@@ -89,6 +97,12 @@ return [
             'cleanPost' => true,
             'cleanGet'  => true,
         ],
+        'bootstrap'       => [
+            'class' => 'bootstrap.components.TbApi',
+        ],
+        'yiiwheels'       => [
+            'class' => 'yiiwheels.YiiWheels',
+        ],
         'file'            => [
             'class' => 'common.extensions.file.CFile',
         ],
@@ -104,8 +118,8 @@ return [
         'user'            => [
             // enable cookie-based authentication
             'allowAutoLogin' => true,
-            //	'class'          => 'common.modules.auth.components.AuthWebUser',
-            'class'          => 'auth.components.AuthWebUser',
+            'class'          => 'common.modules.auth.components.AuthWebUser',
+            //  'class'          => 'auth.components.AuthWebUser',
         ],
         'request'         => [
             'enableCsrfValidation'   => true,
@@ -125,15 +139,15 @@ return [
             'hashAlgorithm'  => 'sha1',
         ],
         'authManager'     => [
-            //	'class'           => 'common.modules.auth.components.CachedDbAuthManager',
-            'class'           => 'auth.components.CachedDbAuthManager',
+            'class'           => 'common.modules.auth.components.CachedDbAuthManager',
+            //'class'           => 'auth.components.CachedDbAuthManager',
             'cachingDuration' => 3600,
             'connectionID'    => 'db',
             'behaviors'       => [
                 'auth' => [
                     //		'appLayout'=>'application.themes.bootstrap.views.layouts.main',
-                    //			'class'  => 'common.modules.auth.components.AuthBehavior',
-                    'class'  => 'auth.components.AuthBehavior',
+                    'class'  => 'common.modules.auth.components.AuthBehavior',
+                    // 'class'  => 'auth.components.AuthBehavior',
                     'admins' => [
                         'neowutran'
                     ],
@@ -175,25 +189,25 @@ return [
                   ),
                  */
                 // uncomment the following to show log messages on web pages
-                /*
-                  array(
-                  'class'=>'CWebLogRoute',
-                  ),
-                 */
+
+                [
+                    'class' => 'CWebLogRoute',
+                ],
+
             ],
         ],
     ],
     // application parameters
     'params'     => [
-        'adminEmail'            => ADMIN_MAIL,
-        'path'                  => PROJECT_ROOT,
-        'static_path'           => PROJECT_STATIC_ROOT,
-        'frontend'              => 'frontend/',
-        'backend'               => 'backend/',
-        'php.timezone'          => 'Europe/Paris',
-        'php.defaultCharset'    => 'utf8',
+        'adminEmail'         => ADMIN_MAIL,
+        'path'               => PROJECT_ROOT,
+        'static_path'        => PROJECT_STATIC_ROOT,
+        'frontend'           => 'frontend/',
+        'backend'            => 'backend/',
+        'php.timezone'       => 'Europe/Paris',
+        'php.defaultCharset' => 'utf8',
         //	'gallery_path'          => 'frontend/gallery/',
-        'static_url'            => PROJECT_STATIC_URL,
+        'static_url'         => PROJECT_STATIC_URL,
         //	'gallery_url'           => 'frontend/gallery/',
     ],
 ];

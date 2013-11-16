@@ -58,7 +58,7 @@ class AuthWebUser extends CWebUser
      *
      * @return boolean whether the operations can be performed by this user.
      */
-    public function checkAccess($operation, $params = array(), $allowCaching = true)
+    public function checkAccess($operation, $params = [], $allowCaching = true)
     {
 
         if ($this->getIsAdmin()) {

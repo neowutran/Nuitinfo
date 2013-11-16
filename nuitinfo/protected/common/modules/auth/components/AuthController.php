@@ -22,11 +22,11 @@ abstract class AuthController extends CController
     /**
      * @var array context menu items. This property will be assigned to {@link CMenu::items}.
      */
-    public $menu = array();
+    public $menu = [];
     /**
      * @var array the breadcrumbs of the current page.
      */
-    public $breadcrumbs = array();
+    public $breadcrumbs = [];
 
     /**
      * Returns the authorization item type as a string.

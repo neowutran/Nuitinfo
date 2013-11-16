@@ -43,13 +43,13 @@ class AuthItemForm extends CFormModel
     public function attributeLabels()
     {
 
-        return array(
+        return [
             'name'        => Yii::t('AuthModule.main', 'System name'),
             'description' => Yii::t('AuthModule.main', 'Description'),
             'bizrule'     => Yii::t('AuthModule.main', 'Business rule'),
             'data'        => Yii::t('AuthModule.main', 'Data'),
             'type'        => Yii::t('AuthModule.main', 'Type'),
-        );
+        ];
     }
 
     /**
@@ -60,21 +60,21 @@ class AuthItemForm extends CFormModel
     public function rules()
     {
 
-        return array(
-            array(
+        return [
+            [
                 'description, type',
                 'required'
-            ),
-            array(
+            ],
+            [
                 'name',
                 'required',
                 'on' => 'create'
-            ),
-            array(
+            ],
+            [
                 'name',
                 'length',
                 'max' => 64
-            ),
-        );
+            ],
+        ];
     }
 }

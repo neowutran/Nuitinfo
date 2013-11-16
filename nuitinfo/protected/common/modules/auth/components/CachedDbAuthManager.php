@@ -8,7 +8,7 @@
  * @package   auth.components
  */
 
-Yii::import('auth.components.ICachedAuthManager');
+Yii::import('common.modules.auth.components.ICachedAuthManager');
 
 /**
  * Caching layer for CDbAuthManager that allows for caching access checks.
@@ -41,7 +41,7 @@ class CachedDbAuthManager extends CDbAuthManager implements ICachedAuthManager
      *
      * @return boolean whether the operations can be performed by the user.
      */
-    public function checkAccess($itemName, $userId, $params = array(), $allowCaching = true)
+    public function checkAccess($itemName, $userId, $params = [], $allowCaching = true)
     {
 
         $cacheKey = $this->resolveCacheKey($itemName, $userId);
@@ -55,7 +55,7 @@ class CachedDbAuthManager extends CDbAuthManager implements ICachedAuthManager
                 }
             }
         } else {
-            $data = array();
+            $data = [];
         }
 
         $result = $data[$key] = parent::checkAccess($itemName, $userId, $params);

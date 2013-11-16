@@ -25,7 +25,7 @@ interface ICachedAuthManager
      *
      * @return boolean whether the operations can be performed by the user.
      */
-    public function checkAccess($itemName, $userId, $params = array(), $allowCaching = true);
+    public function checkAccess($itemName, $userId, $params = [], $allowCaching = true);
 
     /**
      * Flushes the access cache for the specified user.

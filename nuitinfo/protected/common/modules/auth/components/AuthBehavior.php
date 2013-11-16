@@ -19,7 +19,7 @@ class AuthBehavior extends CBehavior
     /**
      * @var string[] a list of names for the users that should be treated as administrators.
      */
-    public $admins = array('admin');
+    public $admins = ['admin'];
 
     /**
      * Returns whether the given item has a specific parent.
@@ -96,7 +96,7 @@ class AuthBehavior extends CBehavior
     public function getAncestors($itemName, $permissions = null)
     {
 
-        $ancestors = array();
+        $ancestors = [];
 
         if ($permissions === null) {
             $permissions = $this->getPermissions();
@@ -139,19 +139,19 @@ class AuthBehavior extends CBehavior
     private function getPermissions($items = null, $depth = 0)
     {
 
-        $permissions = array();
+        $permissions = [];
 
         if ($items === null) {
             $items = $this->owner->getAuthItems();
         }
 
         foreach ($items as $itemName => $item) {
-            $permissions[$itemName] = array(
+            $permissions[$itemName] = [
                 'name'     => $itemName,
                 'item'     => $item,
                 'children' => $this->getPermissions($item->getChildren(), $depth + 1),
                 'depth'    => $depth,
-            );
+            ];
         }
 
         return $permissions;
@@ -182,7 +182,7 @@ class AuthBehavior extends CBehavior
     public function getItemsPermissions($names)
     {
 
-        $permissions = array();
+        $permissions = [];
 
         $items = $this->getPermissions();
         $flat  = $this->flattenPermissions($items);
@@ -206,7 +206,7 @@ class AuthBehavior extends CBehavior
     public function flattenPermissions($permissions)
     {
 
-        $flattened = array();
+        $flattened = [];
         foreach ($permissions as $itemName => $itemPermissions) {
             $children = $itemPermissions['children'];
             unset($itemPermissions['children']); // not needed in a flat tree

@@ -1,17 +1,17 @@
 <?php
-$this->breadcrumbs = [
-    'Users' => ['index'],
-    'Create',
-];
+$this->breadcrumbs = array(
+	'Users' => array( 'index' ),
+	'Create',
+);
 
-$this->menu = [
-    [
-        'label' => 'List User',
-        'url'   => ['index']
-    ],
-];
+$this->menu = array(
+	array(
+		'label' => 'List User',
+		'url'   => array( 'index' )
+	),
+);
 ?>
 
 <h1>Create User</h1>
 
-<?php echo $this->renderPartial('_form', ['model' => $model]); ?>
+<?php echo $this->renderPartial( '_form', array( 'model' => $model ) ); ?>

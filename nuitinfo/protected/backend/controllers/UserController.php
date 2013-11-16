@@ -10,7 +10,7 @@ class UserController extends GxController
 
         return [
             [
-                'auth.filters.AuthFilter'
+                'common.modules.auth.filters.AuthFilter'
             ],
         ];
     }

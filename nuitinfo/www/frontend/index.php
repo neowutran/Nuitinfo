@@ -9,7 +9,7 @@
  * @copyright 2013 2amigOS! Consultation Group LLC
  * @license   http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-require(__DIR__ . '/../../../presentation/ini_file.php');
+require(__DIR__ . '/../../../nuitinfo/ini_file.php');
 require(__DIR__ . '/../../protected/common/lib/vendor/autoload.php');
 require(__DIR__ . '/../../protected/common/lib/vendor/yiisoft/yii/framework/yiilite.php');
 

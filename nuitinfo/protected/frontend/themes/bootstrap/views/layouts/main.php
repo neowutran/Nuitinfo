@@ -59,31 +59,25 @@ Yii::app()->bootstrap->register();
     $this->widget(
         'bootstrap.widgets.TbNavbar',
         [
-            'brandLabel' => 'Accueil',
+            'brandLabel' => 'Nuit de l\'info 2013',
             'items'      => [
                 [
                     'class' => 'bootstrap.widgets.TbNav',
                     'items' => [
                         [
-                            'label' => 'User',
+                            'label' => 'Equipe',
                             'url'   => Yii::app()
-                                    ->createUrl("user/index")
+                                    ->createUrl("site/equipe")
                         ],
                         [
-                            'label' => 'Activity',
+                            'label' => 'Outils / aide',
                             'url'   => Yii::app()
-                                    ->createUrl("activity/index")
+                                    ->createUrl("site/outils")
                         ],
                         [
-                            'label' => 'Plan',
+                            'label' => 'Projet',
                             'url'   => Yii::app()
-                                    ->createUrl("plan/index")
-                        ],
-                        [
-                            //  'bootstrap.*',
-                            'label' => 'Auth',
-                            'url'   => Yii::app()
-                                    ->createUrl("auth")
+                                    ->createUrl("site/index")
                         ],
                     ]
                 ]
@@ -100,9 +94,26 @@ Yii::app()->bootstrap->register();
                 ] );
                 ?><!-- breadcrumbs -->
     <?php endif ?>
+    <?php echo TbHtml::well('<h1>Nom d\'equipe: x + 1 is a tree</h1>'); ?>
+
     <?php
     echo $content;
     ?>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nuitdelinfo2013'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 </div>
 </body>
 </html>

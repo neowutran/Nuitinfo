@@ -57,6 +57,14 @@ class SiteController extends Controller
         $this->render('index');
     }
 
+    public function actionEquipe(){
+        $this->render('equipe');
+    }
+
+    public function actionOutils(){
+        $this->render('outils');
+    }
+
     /**
      * This is the action to handle external exceptions.
      */

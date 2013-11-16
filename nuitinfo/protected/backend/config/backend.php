@@ -20,27 +20,26 @@ return [
     // path aliases
     'aliases'    => [
 // assumed the use of yiistrap and yiiwheels extensions
-        'bootstrap' => dirname(__FILE__) . '/../..' . '/common/lib/vendor/2amigos/yiistrap',
-        'yiiwheels' => dirname(__FILE__) . '/../..' . '/common/lib/vendor/2amigos/yiiwheels',
 
     ],
     'basePath'   => realPath(__DIR__ . '/..'),
     'theme'      => 'bootstrap',
     'import'     => [
-        'common.extensions.components.*',
+       /* 'common.extensions.components.*',
         'common.components.*',
         'common.helpers.*',
         'common.models.*',
         'common.models._base.*',
         'common.modules.*',
         'common.extensions.*',
-        'common.extensions.giix.giix-components.*',
-        'bootstrap.helpers.TbHtml',
+
         'application.controllers.*',
         'application.extensions.*',
         'application.helpers.*',
         'application.models.*',
         'application.components.*',
+       */
+        'common.extensions.giix.giix-components.*',
     ],
     'behaviors'  => [
         'common.components.ApplicationConfigBehavior'
@@ -83,12 +82,7 @@ return [
             'baseURL'  => PROJECT_STATIC_URL . 'backend/assets/',
             'basePath' => PROJECT_STATIC_ROOT . 'backend/assets/',
         ],
-        'bootstrap'    => [
-            'class' => 'bootstrap.components.TbApi',
-        ],
-        'yiiwheels'    => [
-            'class' => 'yiiwheels.YiiWheels',
-        ],
+
         'clientScript' => [
             'scriptMap' => [ //     'bootstrap.min.css' => false,
                 //    'bootstrap.min.js'  => false,
