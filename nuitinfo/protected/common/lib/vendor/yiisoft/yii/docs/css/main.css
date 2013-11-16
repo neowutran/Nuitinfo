@@ -1,0 +1,475 @@
+body
+{
+    font       : normal 10pt Arial, Helvetica, sans-serif;
+    background : #666666;
+    margin     : 0;
+    padding    : 0;
+    text-align : center;
+    color      : #555555;
+}
+
+a, a:visited
+{
+    color           : #306495;
+    background      : inherit;
+    text-decoration : none;
+}
+
+a:hover
+{
+    color           : #73471b;
+    background      : inherit;
+    text-decoration : underline;
+}
+
+pre
+{
+    border-left : 5px solid #f5f5f5;
+    font-family : "Courier New", Courier, mono;
+    margin      : 0.3em;
+    padding     : 0.5em;
+}
+
+.page #container
+{
+    width      : 960px;
+    background : #ffffff;
+    margin     : 0 auto;
+    border     : 1px solid #000000;
+    text-align : left;
+}
+
+.page #header
+{
+    background : #dddddd;
+    padding    : 0 10px 0 20px;
+}
+
+.page #header h1
+{
+    margin  : 0;
+    padding : 10px 0;
+}
+
+.page #header a
+{
+    color           : #555555;
+    text-decoration : none;
+}
+
+.page #sidebar
+{
+    float   : right;
+    width   : 200px;
+    padding : 15px 10px;
+}
+
+.page #content
+{
+    margin  : 0 210px 0 0;
+    padding : 0 20px;
+}
+
+.page #footer
+{
+    margin     : 20px 0 0 0;
+    padding    : 0 10px 0 20px;
+    background : #dddddd;
+    font-size  : 0.8em;
+}
+
+.page #footer p
+{
+    margin  : 0;
+    padding : 10px 0;
+}
+
+.clearfloat
+{
+    clear       : both;
+    height      : 0;
+    font-size   : 1px;
+    line-height : 0px;
+}
+
+.portlet
+{
+    -moz-border-radius : 7px;
+    font-size          : 0.9em;
+    margin             : 0;
+    padding            : 3px;
+    margin-bottom      : 15px;
+    background-color   : #eeeeee;
+}
+
+.portlet .header
+{
+    color       : #555555;
+    font-size   : 1.2em;
+    font-weight : bold;
+    line-height : 1;
+    padding     : 5px 10px 6px;
+    margin      : 0;
+    text-align  : center;
+}
+
+.portlet .content
+{
+    -moz-border-radius-bottomleft  : 5px;
+    -moz-border-radius-bottomright : 5px;
+    background                     : #f5f5f5;
+    padding                        : 5px 5px 10px 5px;
+}
+
+.portlet ul, .portlet ol
+{
+    list-style-image    : none;
+    list-style-position : outside;
+    list-style-type     : none;
+    margin              : 0 0 0 5px;
+    padding             : 0;
+}
+
+.portlet li
+{
+    padding : 2px 0 4px 0px;
+}
+
+.portlet .row
+{
+    margin : 0 0 5px 0;
+}
+
+.portlet .row .hint
+{
+    margin  : 0;
+    padding : 0;
+    color   : #999999;
+}
+
+.errorMessage
+{
+    color : red;
+}
+
+.form
+{
+    -moz-border-radius : 7px;
+    border             : 3px solid #eeeeee;
+    background         : #f5f5f5;
+    padding            : 10px;
+    margin             : 0;
+}
+
+.form .row
+{
+    margin : 5px 0;
+}
+
+.form .row label
+{
+    display     : block;
+    font-weight : bold;
+}
+
+.form .hint
+{
+    margin  : 0;
+    padding : 0;
+    color   : #999999;
+}
+
+.form label.error,
+.form span.error
+{
+    color : #cc0000;
+}
+
+.form input.error,
+.form textarea.error,
+.form select.error
+{
+    background   : #ffeeee;
+    border-color : #cc0000;
+}
+
+.form .errorSummary
+{
+    border     : 2px solid #cc0000;
+    padding    : 7px 7px 12px 7px;
+    margin     : 0 0 20px 0;
+    background : #ffeeee;
+    font-size  : 0.9em;
+}
+
+.form .errorSummary p
+{
+    margin  : 0;
+    padding : 5px;
+}
+
+.form .errorSummary ul
+{
+    margin  : 0;
+    padding : 0 0 0 20px;
+}
+
+.form .errorSummary ul li
+{
+    list-style : square;
+}
+
+.post
+{
+    margin : 20px 0;
+}
+
+.post .title
+{
+    font-size     : 1.8em;
+    border-bottom : 1px solid silver;
+}
+
+.post .title a
+{
+    color           : #555555;
+    text-decoration : none;
+}
+
+.post .author
+{
+    color : #888888;
+}
+
+.post .nav
+{
+    -moz-border-radius : 7px;
+    padding            : 5px;
+    background         : #f5f5f5;
+}
+
+.post .draft
+{
+    color : red;
+}
+
+.post .published
+{
+    color : green;
+}
+
+.post .archived
+{
+    color : yellow;
+}
+
+.comment
+{
+    -moz-border-radius : 7px;
+    padding            : 5px;
+    background         : #f5f5f5;
+    margin             : 5px 0;
+}
+
+.comment .author a
+{
+    color           : #555555;
+    font-weight     : bold;
+    text-decoration : none;
+}
+
+.comment .author a:hover
+{
+    color         : #333333;
+    border-bottom : 1px solid gray;
+}
+
+.comment .time
+{
+    color     : #888888;
+    font-size : 0.8em;
+}
+
+.comment a.cid
+{
+    color           : #cccccc;
+    float           : right;
+    font-size       : 1.5em;
+    font-weight     : bold;
+    padding         : 0 5px 5px 5px;
+    text-decoration : none;
+}
+
+.comment a.cid:hover
+{
+    color : #555555;
+}
+
+.comment .pending
+{
+    color : red;
+}
+
+span.tag
+{
+    padding : 0 4px 0 0;
+}
+
+table.dataGrid
+{
+    background      : white;
+    border-collapse : collapse;
+    width           : 100%;
+}
+
+table.dataGrid th, table.dataGrid td
+{
+    font-size : 0.9em;
+    border    : 1px #aaaaaa solid;
+    padding   : 0.3em;
+}
+
+table.dataGrid th
+{
+    background : #dddddd;
+    text-align : center;
+}
+
+table.dataGrid th a
+{
+    color           : #555555;
+    text-decoration : none;
+}
+
+table.dataGrid th a:hover
+{
+    color         : #333333;
+    border-bottom : 1px solid gray;
+}
+
+table.dataGrid tr.odd
+{
+    background : #f5f5f5;
+}
+
+.content .toc
+{
+    font-family : Calibri, Helvetica, Arial, sans-serif;
+    font-size   : 10.5pt;
+}
+
+ul.toc, ul.toc ul, ul.toc li, ul.toc li li
+{
+    list-style-image    : none;
+    list-style-position : outside;
+    list-style-type     : none;
+    margin              : 0;
+    padding             : 0;
+}
+
+ul.toc li
+{
+    padding : 2px 0 2px 2px;
+    margin  : 0 0 0 10px;
+}
+
+ul.toc li li
+{
+    padding : 2px 0 2px 20px;
+    margin  : 0 0 0 -10px;
+}
+
+ul.toc li.active
+{
+    background : #d3dfee;
+    margin     : 0 -5px 0 -20px;
+    padding    : 2px 5px 2px 30px;
+}
+
+pre
+{
+    display       : block;
+    padding       : 1em;
+    background    : #fcfcfc;
+    border-top    : 1px solid #eeeeee;
+    border-bottom : 1px solid #eeeeee;
+    font-family   : Consolas, "Courier New", Courier, mono;
+    margin        : 1em 0;
+    font-size     : 10pt;
+}
+
+code
+{
+    border-bottom : 1px dotted #cccccc;
+    font-weight   : bold;
+    color         : #666666;
+}
+
+div.revision
+{
+    font-size  : 0.8em;
+    color      : #999999;
+    margin-top : 5em;
+}
+
+blockquote.tip, blockquote.info, blockquote.note
+{
+    border-top          : 1px solid #00ccff;
+    border-bottom       : 1px solid #00ccff;
+    padding             : 0em 1em 0em 55px;
+    margin              : 1em 0em;
+    border-color        : #e4dfb8;
+    background-color    : #fffae6;
+    background-repeat   : no-repeat;
+    background-position : 10px 50%;
+    background-image    : url(tip.gif);
+}
+
+blockquote.note
+{
+    background-color : #ffe6e6;
+    border-color     : #d9c3c3;
+    background-image : url(note.gif);
+}
+
+blockquote.info
+{
+    border-color     : #b4daa5;
+    background-color : #ebffce;
+    background-image : url(info.gif);
+}
+
+span.type
+{
+    float         : left;
+    font-size     : 1em;
+    padding-right : 0.5em;
+    font-weight   : bold;
+}
+
+div.image
+{
+    -moz-border-radius : 7px;
+    margin             : 10px 0;
+    border             : 3px solid #eeeeee;
+    text-align         : center;
+}
+
+div.image > p
+{
+    background  : #eeeeee;
+    margin      : 0;
+    font-weight : bold;
+}
+
+#main h1, #main h2, #main h3, #main h4
+{
+    margin-top     : 1em;
+    margin-bottom  : 0;
+    letter-spacing : 1px;
+}
+
+#languages .active
+{
+    background : #d3dfee;
+}

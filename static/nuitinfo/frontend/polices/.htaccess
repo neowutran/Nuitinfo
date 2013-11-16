@@ -1,0 +1,14 @@
+AddType application/x-httpd-php php
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresDefault                          "access plus 2 month"
+  ExpiresByType application/x-httpd-php   "access plus 300 seconds"
+  <IfModule mod_headers.c>
+    Header append Cache-Control "public"
+  </IfModule>
+</IfModule>
+<FilesMatch "\.(ttf|woff|eot|svg)$">
+<IfModule mod_headers.c>
+Header set Access-Control-Allow-Origin "*"
+</IfModule>
+</FilesMatch>
