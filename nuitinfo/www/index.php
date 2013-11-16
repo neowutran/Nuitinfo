@@ -1,3 +1,3 @@
 <?php
 
-header("Location: https://presentation.sephirothgeek.ch/frontend/");
+header("Location: https://nuitinfo.sephirothgeek.ch/frontend/");

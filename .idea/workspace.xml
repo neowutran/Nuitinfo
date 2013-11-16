@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fb8f3b-1f95-4824-9f0e-808d7cf9cb04" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nuitinfo/protected/common/lib/vendor/yiisoft/yii/framework/yiilite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuitinfo/protected/composer.phar" afterPath="$PROJECT_DIR$/nuitinfo/protected/composer.phar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuitinfo/www/index.php" afterPath="$PROJECT_DIR$/nuitinfo/www/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Nuitinfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,38 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="frontend.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nuitinfo/protected/frontend/config/frontend.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="1242">
-              <folding>
-                <marker date="1384636489922" expanded="true" signature="646:1793" placeholder="..." />
-                <marker date="1384636489922" expanded="true" signature="675:787" placeholder="..." />
-                <marker date="1384636489922" expanded="true" signature="817:963" placeholder="..." />
-                <marker date="1384636489922" expanded="true" signature="1919:2263" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nuitinfo/protected/common/config/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3582">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginForm.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nuitinfo/protected/backend/models/LoginForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1111" selection-end="1111" vertical-scroll-proportion="-34.0" vertical-offset="0" max-vertical-offset="1260">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UploadImageForm.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nuitinfo/protected/backend/models/UploadImageForm.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,10 +86,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateFormat.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DateFormat.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nuitinfo/protected/common/lib/YiiRestTools/Common/Enum/DateFormat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="3" selection-start="508" selection-end="508" vertical-scroll-proportion="0.4057377" vertical-offset="0" max-vertical-offset="488">
+            <state line="20" column="3" selection-start="508" selection-end="508" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="468">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nuitinfo/www/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="5256">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nuitinfo/www/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="23" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="144">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yiilite.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nuitinfo/protected/common/lib/vendor/yiisoft/yii/framework/yiilite.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187038">
               <folding />
             </state>
           </provider>
@@ -142,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/nuitinfo/protected/backend/views/user/create.php" />
         <option value="$PROJECT_DIR$/nuitinfo/protected/backend/views/yiiLogError/admin.php" />
         <option value="$PROJECT_DIR$/nuitinfo/protected/common/components/ApplicationConfigBehavior.php" />
         <option value="$PROJECT_DIR$/nuitinfo/protected/common/components/UserIdentity.php" />
@@ -158,6 +155,7 @@
         <option value="$PROJECT_DIR$/nuitinfo/protected/backend/models/UploadImageForm.php" />
         <option value="$PROJECT_DIR$/nuitinfo/protected/common/models/Gallery.php" />
         <option value="$PROJECT_DIR$/nuitinfo/protected/common/lib/YiiRestTools/Common/Enum/DateFormat.php" />
+        <option value="$PROJECT_DIR$/nuitinfo/www/index.php" />
       </list>
     </option>
   </component>
@@ -257,6 +255,16 @@
               <option name="myItemId" value="Nuitinfo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -273,6 +281,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,6 +391,116 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yiisoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuitinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yiisoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,7 +716,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="options.lastSelected" value="web.server" />
+    <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="JavaScriptLanguageLevel" value="ES5" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -592,7 +728,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="PublishConfig" serverName="sephirothgeek.ch" serverId="c3233f30-c6b6-475a-8eac-b80d5e6889b2" uploadOnCheckin="c3233f30-c6b6-475a-8eac-b80d5e6889b2" autoUpload="true" uploadOnSaveAll="true" autoUploadExternalChanges="true">
+  <component name="PublishConfig" serverName="sephirothgeek.ch" serverId="c3233f30-c6b6-475a-8eac-b80d5e6889b2" uploadOnCheckin="c3233f30-c6b6-475a-8eac-b80d5e6889b2">
     <servers>
       <server id="6553dbf7-7273-45e6-8b09-e9e4302fd63f">
         <serverdata />
@@ -609,11 +745,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nuitinfo/protected/common/lib/vendor/yiisoft/yii/framework" />
       <recent name="$PROJECT_DIR$/nuitinfo/protected/common/lib" />
       <recent name="$PROJECT_DIR$/nuitinfo/protected/frontend/themes" />
       <recent name="$PROJECT_DIR$/presentation/protected/common/extensions" />
       <recent name="$PROJECT_DIR$/presentation/protected/common/extensions/yii-mail/vendors/swiftMailer" />
-      <recent name="$PROJECT_DIR$/presentation/protected/common" />
     </key>
   </component>
   <component name="RunManager">
@@ -684,7 +820,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292232" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986537" sideWeight="0.67077684" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986537" sideWeight="0.67077684" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292232" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -692,7 +828,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292232" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.67077684" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.67077684" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.67077684" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -720,45 +856,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nuitinfo/protected/frontend/themes/bootstrap/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
-          <folding>
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384636451000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nuitinfo/protected/frontend/views/gallery/gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nuitinfo/ini_file.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/nuitinfo/frontend/app/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="42" selection-start="166" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
@@ -784,10 +881,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="1242">
           <folding>
-            <marker date="1384636489922" expanded="true" signature="646:1793" placeholder="..." />
-            <marker date="1384636489922" expanded="true" signature="675:787" placeholder="..." />
-            <marker date="1384636489922" expanded="true" signature="817:963" placeholder="..." />
-            <marker date="1384636489922" expanded="true" signature="1919:2263" placeholder="..." />
+            <marker date="1384636489922" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1384636489922" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1384636489922" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1384636489922" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -850,7 +947,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nuitinfo/protected/common/lib/YiiRestTools/Common/Enum/DateFormat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="3" selection-start="508" selection-end="508" vertical-scroll-proportion="0.4057377" vertical-offset="0" max-vertical-offset="488">
+        <state line="20" column="3" selection-start="508" selection-end="508" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuitinfo/www/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuitinfo/www/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="23" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuitinfo/protected/common/lib/vendor/yiisoft/yii/framework/yiilite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187038">
           <folding />
         </state>
       </provider>
