@@ -182,252 +182,253 @@
 <strong>Summary:</strong><br />
 
 <div class="method-summary">
-    <div class="method-definition">
-        <span class="method-result">Swift_Mime_SimpleMimeEntity</span>
-        <a href="#method__construct"
-           title="details"
-           class="method-name">__construct</a>
-        (<span class="var-type"><a href="../../Swift/Mime/Swift_Mime_HeaderSet.html">Swift_Mime_HeaderSet</a></span>&nbsp;<span class="var-name">$headers</span>,
-        <span class="var-type"><a href="../../Swift/Mime/Swift_Mime_ContentEncoder.html">Swift_Mime_ContentEncoder</a></span>&nbsp;<span class="var-name">$encoder</span>,
-        <span class="var-type"><a href="../../Swift/KeyCache/Swift_KeyCache.html">Swift_KeyCache</a></span>&nbsp;<span class="var-name">$cache</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#method__destruct"
-           title="details"
-           class="method-name">__destruct</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodcharsetChanged"
-           title="details"
-           class="method-name">charsetChanged</a>
-        (<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodencoderChanged"
-           title="details"
-           class="method-name">encoderChanged</a>
-        (<span class="var-type"><a href="../../Swift/Mime/Swift_Mime_ContentEncoder.html">Swift_Mime_ContentEncoder</a></span>&nbsp;<span class="var-name">$encoder</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">string</span>
-        <a href="#methodgenerateId"
-           title="details"
-           class="method-name">generateId</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">string</span>
-        <a href="#methodgetBody"
-           title="details"
-           class="method-name">getBody</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">string</span>
-        <a href="#methodgetBoundary"
-           title="details"
-           class="method-name">getBoundary</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">array</span>
-        <a href="#methodgetChildren"
-           title="details"
-           class="method-name">getChildren</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">string</span>
-        <a href="#methodgetContentType"
-           title="details"
-           class="method-name">getContentType</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">string</span>
-        <a href="#methodgetDescription"
-           title="details"
-           class="method-name">getDescription</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result"><a href="../../Swift/Mime/Swift_Mime_ContentEncoder.html">Swift_Mime_ContentEncoder</a></span>
-        <a href="#methodgetEncoder"
-           title="details"
-           class="method-name">getEncoder</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result"><a href="../../Swift/Mime/Swift_Mime_HeaderSet.html">Swift_Mime_HeaderSet</a></span>
-        <a href="#methodgetHeaders"
-           title="details"
-           class="method-name">getHeaders</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">string</span>
-        <a href="#methodgetId"
-           title="details"
-           class="method-name">getId</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">int</span>
-        <a href="#methodgetMaxLineLength"
-           title="details"
-           class="method-name">getMaxLineLength</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">int</span>
-        <a href="#methodgetNestingLevel"
-           title="details"
-           class="method-name">getNestingLevel</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodsetBody"
-           title="details"
-           class="method-name">setBody</a>
-        (<span class="var-type">mixed</span>&nbsp;<span class="var-name">$body</span>,
-        [<span class="var-type">string</span>&nbsp;<span class="var-name">$contentType</span> =
-        <span class="var-default">null</span>])
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodsetBoundary"
-           title="details"
-           class="method-name">setBoundary</a>
-        (<span class="var-type">string</span>&nbsp;<span class="var-name">$boundary</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodsetChildren"
-           title="details"
-           class="method-name">setChildren</a>
-        (<span class="var-type"></span>&nbsp;<span class="var-name">$children</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$compoundLevel</span>
-        = <span class="var-default">null</span>])
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodsetContentType"
-           title="details"
-           class="method-name">setContentType</a>
-        (<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodsetDescription"
-           title="details"
-           class="method-name">setDescription</a>
-        (<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodsetEncoder"
-           title="details"
-           class="method-name">setEncoder</a>
-        (<span class="var-type"><a href="../../Swift/Mime/Swift_Mime_ContentEncoder.html">Swift_Mime_ContentEncoder</a></span>&nbsp;<span class="var-name">$encoder</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodsetId"
-           title="details"
-           class="method-name">setId</a>
-        (<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodsetMaxLineLength"
-           title="details"
-           class="method-name">setMaxLineLength</a>
-        (<span class="var-type">int</span>&nbsp;<span class="var-name">$length</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#methodtoByteStream"
-           title="details"
-           class="method-name">toByteStream</a>
-        (<span class="var-type"><a href="../../Swift/ByteStream/Swift_InputByteStream.html">Swift_InputByteStream</a></span>&nbsp;<span class="var-name">$is</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">string</span>
-        <a href="#methodtoString"
-           title="details"
-           class="method-name">toString</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#method_clearCache"
-           title="details"
-           class="method-name">_clearCache</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#method_fixHeaders"
-           title="details"
-           class="method-name">_fixHeaders</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#method_getCache"
-           title="details"
-           class="method-name">_getCache</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#method_getHeaderFieldModel"
-           title="details"
-           class="method-name">_getHeaderFieldModel</a>
-        (<span class="var-type"></span>&nbsp;<span class="var-name">$field</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#method_getHeaderParameter"
-           title="details"
-           class="method-name">_getHeaderParameter</a>
-        (<span class="var-type"></span>&nbsp;<span class="var-name">$field</span>,
-        <span class="var-type"></span>&nbsp;<span class="var-name">$parameter</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#method_getIdField"
-           title="details"
-           class="method-name">_getIdField</a>
-        ()
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#method_setHeaderFieldModel"
-           title="details"
-           class="method-name">_setHeaderFieldModel</a>
-        (<span class="var-type"></span>&nbsp;<span class="var-name">$field</span>,
-        <span class="var-type"></span>&nbsp;<span class="var-name">$model</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">void</span>
-        <a href="#method_setHeaderParameter"
-           title="details"
-           class="method-name">_setHeaderParameter</a>
-        (<span class="var-type"></span>&nbsp;<span class="var-name">$field</span>,
-        <span class="var-type"></span>&nbsp;<span class="var-name">$parameter</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
-    </div>
-    <div class="method-definition">
-        <span class="method-result">string</span>
-        <a href="#method__toString"
-           title="details"
-           class="method-name">__toString</a>
-        ()
-    </div>
+<div class="method-definition">
+    <span class="method-result">Swift_Mime_SimpleMimeEntity</span>
+    <a href="#method__construct"
+       title="details"
+       class="method-name">__construct</a>
+    (<span class="var-type"><a href="../../Swift/Mime/Swift_Mime_HeaderSet.html">Swift_Mime_HeaderSet</a></span>&nbsp;<span class="var-name">$headers</span>,
+    <span class="var-type"><a href="../../Swift/Mime/Swift_Mime_ContentEncoder.html">Swift_Mime_ContentEncoder</a></span>&nbsp;<span class="var-name">$encoder</span>,
+    <span class="var-type"><a href="../../Swift/KeyCache/Swift_KeyCache.html">Swift_KeyCache</a></span>&nbsp;<span class="var-name">$cache</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#method__destruct"
+       title="details"
+       class="method-name">__destruct</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodcharsetChanged"
+       title="details"
+       class="method-name">charsetChanged</a>
+    (<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodencoderChanged"
+       title="details"
+       class="method-name">encoderChanged</a>
+    (<span class="var-type"><a href="../../Swift/Mime/Swift_Mime_ContentEncoder.html">Swift_Mime_ContentEncoder</a></span>&nbsp;<span class="var-name">$encoder</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">string</span>
+    <a href="#methodgenerateId"
+       title="details"
+       class="method-name">generateId</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">string</span>
+    <a href="#methodgetBody"
+       title="details"
+       class="method-name">getBody</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">string</span>
+    <a href="#methodgetBoundary"
+       title="details"
+       class="method-name">getBoundary</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">array</span>
+    <a href="#methodgetChildren"
+       title="details"
+       class="method-name">getChildren</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">string</span>
+    <a href="#methodgetContentType"
+       title="details"
+       class="method-name">getContentType</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">string</span>
+    <a href="#methodgetDescription"
+       title="details"
+       class="method-name">getDescription</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result"><a href="../../Swift/Mime/Swift_Mime_ContentEncoder.html">Swift_Mime_ContentEncoder</a></span>
+    <a href="#methodgetEncoder"
+       title="details"
+       class="method-name">getEncoder</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result"><a href="../../Swift/Mime/Swift_Mime_HeaderSet.html">Swift_Mime_HeaderSet</a></span>
+    <a href="#methodgetHeaders"
+       title="details"
+       class="method-name">getHeaders</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">string</span>
+    <a href="#methodgetId"
+       title="details"
+       class="method-name">getId</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">int</span>
+    <a href="#methodgetMaxLineLength"
+       title="details"
+       class="method-name">getMaxLineLength</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">int</span>
+    <a href="#methodgetNestingLevel"
+       title="details"
+       class="method-name">getNestingLevel</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodsetBody"
+       title="details"
+       class="method-name">setBody</a>
+    (<span class="var-type">mixed</span>&nbsp;<span class="var-name">$body</span>,
+    [<span class="var-type">string</span>&nbsp;<span class="var-name">$contentType</span> =
+    <span class="var-default">null</span>])
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodsetBoundary"
+       title="details"
+       class="method-name">setBoundary</a>
+    (<span class="var-type">string</span>&nbsp;<span class="var-name">$boundary</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodsetChildren"
+       title="details"
+       class="method-name">setChildren</a>
+    (<span class="var-type"></span>&nbsp;<span class="var-name">$children</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$compoundLevel</span>
+    = <span class="var-default">null</span>])
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodsetContentType"
+       title="details"
+       class="method-name">setContentType</a>
+    (<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodsetDescription"
+       title="details"
+       class="method-name">setDescription</a>
+    (<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodsetEncoder"
+       title="details"
+       class="method-name">setEncoder</a>
+    (<span class="var-type"><a href="../../Swift/Mime/Swift_Mime_ContentEncoder.html">Swift_Mime_ContentEncoder</a></span>&nbsp;<span class="var-name">$encoder</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodsetId"
+       title="details"
+       class="method-name">setId</a>
+    (<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodsetMaxLineLength"
+       title="details"
+       class="method-name">setMaxLineLength</a>
+    (<span class="var-type">int</span>&nbsp;<span class="var-name">$length</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#methodtoByteStream"
+       title="details"
+       class="method-name">toByteStream</a>
+    (<span class="var-type"><a href="../../Swift/ByteStream/Swift_InputByteStream.html">Swift_InputByteStream</a></span>&nbsp;<span class="var-name">$is</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">string</span>
+    <a href="#methodtoString"
+       title="details"
+       class="method-name">toString</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#method_clearCache"
+       title="details"
+       class="method-name">_clearCache</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#method_fixHeaders"
+       title="details"
+       class="method-name">_fixHeaders</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#method_getCache"
+       title="details"
+       class="method-name">_getCache</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#method_getHeaderFieldModel"
+       title="details"
+       class="method-name">_getHeaderFieldModel</a>
+    (<span class="var-type"></span>&nbsp;<span class="var-name">$field</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#method_getHeaderParameter"
+       title="details"
+       class="method-name">_getHeaderParameter</a>
+    (<span class="var-type"></span>&nbsp;<span class="var-name">$field</span>,
+    <span class="var-type"></span>&nbsp;<span class="var-name">$parameter</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#method_getIdField"
+       title="details"
+       class="method-name">_getIdField</a>
+    ()
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#method_setHeaderFieldModel"
+       title="details"
+       class="method-name">_setHeaderFieldModel</a>
+    (<span class="var-type"></span>&nbsp;<span class="var-name">$field</span>,
+    <span class="var-type"></span>&nbsp;<span class="var-name">$model</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">void</span>
+    <a href="#method_setHeaderParameter"
+       title="details"
+       class="method-name">_setHeaderParameter</a>
+    (<span class="var-type"></span>&nbsp;<span class="var-name">$field</span>,
+    <span class="var-type"></span>&nbsp;<span class="var-name">$parameter</span>,
+    <span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+</div>
+<div class="method-definition">
+    <span class="method-result">string</span>
+    <a href="#method__toString"
+       title="details"
+       class="method-name">__toString</a>
+    ()
+</div>
 </div>
 <hr />
 <A NAME='method_detail'></A>
